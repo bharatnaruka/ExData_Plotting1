@@ -2,11 +2,11 @@
 power_con_data <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 
 ## get data into a dataframe only for two dates
-TwoDay <- power_con_data[(power_con_data$Date == "2/1/2007")|(power_con_data$Date == "2/2/2007"),]
+TwoDay <- power_con_data[(power_con_data$Date == "1/2/2007")|(power_con_data$Date == "2/2/2007"),]
 
 
 ## Convert Date column into Date class
-TwoDay$Date <- as.Date(TwoDay$Date, "%m/%d/%Y")
+TwoDay$Date <- as.Date(TwoDay$Date,"%d/%m/%Y")
 
 TwoDay$DateTime <- paste(TwoDay$Date, TwoDay$Time, sep=" ")
 
