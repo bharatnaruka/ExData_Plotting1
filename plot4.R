@@ -33,7 +33,7 @@ with(TwoDay, plot(DateTime, Sub_metering_1, type="n",xlab="", ylab="Energy sub m
 with(TwoDay, points(DateTime, Sub_metering_1, type="l"))
 with(TwoDay, points(DateTime, Sub_metering_2, type="l", col="red"))
 with(TwoDay, points(DateTime, Sub_metering_3, type="l", col="blue"))
-legend("topright", col=c("black","red","blue"), pch="___", border="white", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", col=c("black","red","blue"), pch="_", border="white", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 ## Date v/s Voltage
 with(TwoDay, plot(DateTime,Global_reactive_power, type="l",xlab="datetime"))
