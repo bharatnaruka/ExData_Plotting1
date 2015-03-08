@@ -20,7 +20,7 @@ TwoDay$DateTime <- strptime(TwoDay$DateTime,"%Y-%m-%d %H:%M:%S", tz="EST5EDT")
 png(file="plot4.png",width=480, height=480, unit="px")
 
 
-par(mfrow=c(2,2), mar=c(4,4,0,0), oma=c(2,2,2,2))
+par(mfrow=c(2,2), mar=c(4,4,4,4), oma=c(0,0,0,0))
 
 ##Date v/s active power
 with(TwoDay, plot(DateTime,Global_active_power, type="l",xlab="", ylab="Global Active Power (kilowatts)"))
