@@ -6,7 +6,7 @@ TwoDay <- power_con_data[(power_con_data$Date == "2/1/2007")|(power_con_data$Dat
 
 
 ## Convert Date column into Date class
-TwoDay$Date <- as.Date(mdy(TwoDay$Date))
+TwoDay$Date <- as.Date(TwoDay$Date, "%m/%d/%Y")
 
 TwoDay$DateTime <- paste(TwoDay$Date, TwoDay$Time, sep=" ")
 
