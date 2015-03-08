@@ -25,7 +25,7 @@ with(TwoDay, plot(DateTime, Sub_metering_1, type="n",xlab="", ylab="Energy sub m
 with(TwoDay, points(DateTime, Sub_metering_1, type="l"))
 with(TwoDay, points(DateTime, Sub_metering_2, type="l", col="red"))
 with(TwoDay, points(DateTime, Sub_metering_3, type="l", col="blue"))
-legend("topright", col=c("black","red","blue"), pch="_", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", col=c("black","red","blue"), pch=NA,lwd=1, legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 
 ## close device
